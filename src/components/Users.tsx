@@ -6,7 +6,7 @@ function Users() {
   const { data, isLoading, isError } = useQuery(
     reactQueryKeys.users,
     fetchUsers,
-    { cacheTime: 10 }
+    { cacheTime: 1000 }
   );
 
   if (isLoading) return <h1>Loading...</h1>;
