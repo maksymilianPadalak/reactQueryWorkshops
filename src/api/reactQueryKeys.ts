@@ -1,4 +1,4 @@
 export enum reactQueryKeys {
-  posts = "posts",
+  todo = "todo",
   users = "users",
 }

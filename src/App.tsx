@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Posts from "./components/Posts";
+import Todo from "./components/Todo";
 import Users from "./components/Users";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className={"w-100 d-flex flex-column align-items-center"}>
       <h1>Witam na warsztatach z React Query</h1>
       <Users />
-      <Posts />
+      <Todo />
       <h3 className={"m-3"}>Cached users</h3>
       <button
         className={"btn btn-danger"}

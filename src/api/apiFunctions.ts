@@ -1,6 +1,6 @@
 import axios from "axios";
 
-interface Post {
+interface Todo {
   userId: number;
   id: number;
   title: string;
@@ -30,8 +30,8 @@ interface User {
   };
 }
 
-export async function fetchPosts(number: number) {
-  const { data } = await axios.get<Post>(
+export async function fetchTodos(number: number) {
+  const { data } = await axios.get<Todo>(
     `https://jsonplaceholder.typicode.com/todos/${number}`
   );
   return data;
